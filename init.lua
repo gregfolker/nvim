@@ -1,4 +1,4 @@
-require('settings')
-require('mappings')
-require('autocmds')
-require('plugins')
+-- load default settings before loading lazy.nvim
+-- so that mappings are correct
+require("config.default")
+require("config.lazy")
